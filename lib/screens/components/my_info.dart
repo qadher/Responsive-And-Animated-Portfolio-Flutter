@@ -27,7 +27,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Flutter Developer & founder of \n The Flutter Way",
+              "Flutter Developer & CEO of \n Halcyon Inc.",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,
