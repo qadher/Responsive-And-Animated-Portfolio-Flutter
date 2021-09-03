@@ -15,38 +15,40 @@ class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
-        children: [
-          MyInfo(),
-          Expanded(
-              child: SingleChildScrollView(
-            padding: EdgeInsets.all(defaultPadding),
-            child: Column(
-              children: [
-                AreaInfoText(
-                  title: "Residence",
-                  text: "India",
-                ),
-                AreaInfoText(
-                  title: "City",
-                  text: "Kasaragod",
-                ),
-                AreaInfoText(
-                  title: "Age",
-                  text: "21",
-                ),
-                Skills(),
-                SizedBox(
-                  height: defaultPadding,
-                ),
-                Coding(),
-                Knowledges(),
-                CvAndSocialMedia(),
+      child: SafeArea(
+        child: Column(
+          children: [
+            MyInfo(),
+            Expanded(
+                child: SingleChildScrollView(
+              padding: EdgeInsets.all(defaultPadding),
+              child: Column(
+                children: [
+                  AreaInfoText(
+                    title: "Residence",
+                    text: "India",
+                  ),
+                  AreaInfoText(
+                    title: "City",
+                    text: "Kasaragod",
+                  ),
+                  AreaInfoText(
+                    title: "Age",
+                    text: "21",
+                  ),
+                  Skills(),
+                  SizedBox(
+                    height: defaultPadding,
+                  ),
+                  Coding(),
+                  Knowledges(),
+                  CvAndSocialMedia(),
 
-              ],
-            ),
-          ))
-        ],
+                ],
+              ),
+            ))
+          ],
+        ),
       ),
     );
   }
