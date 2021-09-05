@@ -19,7 +19,7 @@ class MyInfo extends StatelessWidget {
             CircleAvatar(
               radius: 50,
               backgroundImage:
-              AssetImage("assets/images/IMG_7344.jpg"),
+               AssetImage("assets/images/mypic.jpg"),
             ),
             Spacer(),
             Text(
